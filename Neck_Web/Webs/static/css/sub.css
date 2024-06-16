@@ -1,0 +1,51 @@
+body {
+    align-items: center;
+    color: indigo;
+    background-color: honeydew;
+    text-align: center;
+    margin: 0 auto;
+    min-height: 100vh;
+    font-size: 30px;
+    font-weight:bold;
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* CSS 파일에서는 url_for() 함수를 직접 사용불가
+     url_for() 함수는 Flask에서 제공하는 템플릿 엔진에서 사용되는 함수임.
+     CSS 파일에서는 직접 상대 경로를 사용하여 이미지 파일을 참조해야 함 */
+  
+  .file-upload {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .file-upload input[type="file"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: url('../img/cursor_M.png'), pointer;
+  }
+  
+  .file-upload label {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: url('../img/cursor_M.png'), pointer;
+  }
+  
+  .file-upload label:hover {
+    background-color: #cbffcd;
+  }
+
+  form {
+    align-items: center;
+    color: rgb(34, 95, 44);
+    text-align: center;
+    margin: 0 auto;
+  }

@@ -1,0 +1,45 @@
+body {
+    align-items: center;
+    color: rgb(245, 255, 223);
+    background-image: url('../img/turtle.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    margin: 0 auto;
+    min-height: 100vh;
+    font-size: 30px;
+    font-weight:bold;
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* CSS 파일에서는 url_for() 함수를 직접 사용불가
+     url_for() 함수는 Flask에서 제공하는 템플릿 엔진에서 사용되는 함수임.
+     CSS 파일에서는 직접 상대 경로를 사용하여 이미지 파일을 참조해야 함 */
+  
+  form {
+    align-items: center;
+    color: indigo;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007432;
+    color: #fffa9a;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: url('../img/cursor.png'), pointer;
+    transition: background-color 0.3s ease, text-decoration 0.3s ease;
+    font-size: 18px;
+  }
+  
+  .button:hover {
+    background-color: #1f009c;
+    text-decoration: underline;
+    cursor: url('../img/cursor_M.png'), pointer;
+  }
+  

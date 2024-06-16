@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WatchOutYourNeck</title>
+    <link href = "{{url_for('static', filename = 'css/sub.css')}}" rel = 'stylesheet'>
+</head>
+<body>
+    <br>
+    <h1>나는 7ㅓ북이다.</h1>
+    <br><br><br>
+    <form action = "/turtle_result" method="post" enctype="multipart/form-data">
+        <div class="file-upload">
+          <input type="file" id="file" name = 'file' accept="image/*">
+          <label for="file">Choose a file</label>
+        </div>
+        <br><br>
+        <input type="submit" value="내 사진 보내기">
+    </form>
+    <br><br><br>
+    <a href = "http://127.0.0.1:5000/" class = 'button'>main page</a>
+    
+
+</body>
+</html>

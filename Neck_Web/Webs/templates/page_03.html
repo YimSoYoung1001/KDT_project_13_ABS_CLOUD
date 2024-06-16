@@ -1,0 +1,11 @@
+{% if t_list %}
+    <ul>
+    {% for t in t_list %}
+        <li>{{t.date}} | {{ t.time }}</a></li>
+
+    {% endfor %}
+    </ul>
+
+{% else %}
+    <p>질문이 없습니다.</p>
+{% endif %}

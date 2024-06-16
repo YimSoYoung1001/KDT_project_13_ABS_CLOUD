@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WatchOutYourNeck</title>
+    <link href = "{{url_for('static', filename = 'css/sub.css')}}" rel = 'stylesheet'>
+</head>
+<body>
+    <br>
+    <h1>CCTV for my Neck</h1>
+    <br><br><br>
+    <form action = "/turtle_cctv" method="post" enctype="multipart/form-data">
+            <p>노트북을 사용하면서 자세를 올바르게 유지하고 싶나요?</p>
+            <input type="radio" id="yes" name="answer" value="yes">
+            <label for="yes">yes</label><br>
+            
+            <input type="radio" id="no" name="answer" value="no">
+            <label for="no">no</label><br>
+            
+            <input type="submit" value="제출">
+    </form>
+    <br><br>
+    <h5>yes를 클릭하면 바로 카메라가 실행됩니다. 얼굴 바로 앞에 A4용지를 세로로 들어주세요</h5>
+    <h5>그 후 2번째로 카메라가 켜지면서 자세 감지 알림이 시작됩니다.</h5>
+    <h5>종료를 원한다면 자리에서 벗어난 뒤 q를 눌러주세요.</h5>
+    <br><br>
+    <a href = "http://127.0.0.1:5000/" class = 'button'>main page</a>
+
+</body>
+</html>
